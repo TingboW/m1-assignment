@@ -23,16 +23,38 @@
     <main>
         <h1>Adopt the Perfect Pet</h1>
         <h4>from more than 17,000 animal shelters & rescues</h4>
-        <img src="images/adoptions.jpeg" alt = "Adoptions" width="500">
-        <p>
-            <h3>How does it work to adopt a pet?</h3>
-            <h4>1.Use our website’s search to find pets for adoption!</h4>
-            <ul>
-                <li>Find a dog</li>
-                <li>Find a cat</li>
-                <li>Find other pets</li>
-            </ul>
-        <p>
+
+        <h3>Newsletter Signup</h3>
+        <p>Get useful adoption info and latest pet training tips.</p>
+
+            <!-- Create a Form-->
+            <form action="signup" method="post">
+                <fieldset>
+                    <legend>Contact information</legend>
+                    <label>Enter your full name</label><br>
+                    <input type="text" name="name"><br>
+                    <label>Enter your email</label><br>
+                    <input type="email" name="email"><br>
+                    <label>Enter your phone</label><br>
+                    <input type="tel" name="phone"><br>
+                    <label>Select pet you wanted to adopt</label><br>
+                    <input type="radio" name="pet" value="Dog"> Dog
+                    <input type="radio" name="pet" value="Cat"> Cat
+                    <input type="radio" name="pet" value="Others"> Others<br>
+                    <label>How should we contact you?</label>
+                    <select>
+                        <option>Email</option>
+                        <option selected>Phone</option>
+                    </select><br>
+                    <label>Tell us the reason of you visit today:</label><br>
+                    <textarea rows="5" cols="30"></textarea><br>
+                    <input type="submit" value="Sign Up">
+
+                </fieldset>
+            </form>
+
+        <img src="images/Adopt-a-shelter-pet-today_dog-2000px.jpeg" alt = "Adopt a shelter pet today photo" width="600">
+
 
         <p>
            <h4> 2. How to adopt a Pet</h4>
