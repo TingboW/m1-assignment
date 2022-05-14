@@ -1,0 +1,57 @@
+/* All Pages / Global Styles */
+header {
+    background-image: url("images/Adoption-banner.jpeg");
+    background-size: 1400px;
+    background-position: 10 10px;
+    background-repeat:no-repeat;
+    background-color: tomato;
+    height: 350px; 
+    padding-top: 125px;
+    padding-left: 100px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    color:#fff;
+    text-align:right;
+}
+li{
+    list-style-type:none;
+    display:inline;
+    padding: 0 20px;
+}
+li a {
+    text-decoration: none; /* Remove Underline */
+}
+li a:link{
+    color: #000; /* Before Click */
+}
+li a:visited {
+    color:#818db3; /* After Click */
+}
+li a:hover {
+    color:#333; /* Mouse Over */
+}
+li a:active {
+    color:#753a30; /* Mouse Down */
+}
+nav{
+    background-color:rgb(255,245,238);
+    height: 50px;
+    text-align: center;
+    padding-top: 1px;
+}
+main{
+    /*height:400px; /* fixed height for demo purpose only */
+    margin: 50px;
+}
+main h1 { /* contextual slector */
+    color:rgb(129, 141, 179);
+    font-family: arial;
+}
+footer{
+    height: 40px;
+    background-color:rgb(129,141,179);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(211,218,240);
+}
