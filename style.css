@@ -1,19 +1,23 @@
 /* All Pages / Global Styles */
 header {
     background-image: url("images/Adoption-banner.jpeg");
-    background-size: 1400px;
+    background-size: 1500px;
     background-position: 10 10px;
     background-repeat:no-repeat;
     background-color: tomato;
     height: 350px; 
-    padding-top: 125px;
-    padding-left: 100px;
+    padding-top: 160px;
+    padding-left: 700px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+    font-size: 55px;
     color:#fff;
-    text-align:right;
+    text-shadow: 1px 1px 1px #333;
+    text-align:center;
+    position: relative;
+	overflow: hidden;
 }
+
 li{
     list-style-type:none;
     display:inline;
@@ -26,20 +30,21 @@ li a:link{
     color: #000; /* Before Click */
 }
 li a:visited {
-    color:#818db3; /* After Click */
+    color:#123455; /* After Click */
 }
 li a:hover {
-    color:#333; /* Mouse Over */
+    color:#6992FE; /* Mouse Over */
 }
 li a:active {
     color:#753a30; /* Mouse Down */
 }
 nav{
-    background-color:rgb(255,245,238);
+    background-color:rgb(255,255,255);
     height: 50px;
     text-align: center;
     padding-top: 1px;
 }
+
 main{
     /*height:400px; /* fixed height for demo purpose only */
     margin: 50px;
@@ -54,4 +59,52 @@ footer{
     text-align: center;
     padding-top: 20px;
     color: rgb(211,218,240);
+}
+
+/* index search bar styles */
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
