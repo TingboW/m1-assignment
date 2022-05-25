@@ -335,10 +335,54 @@ input[type="signup"]{
 
 /* Gallery Styles */
 main #album #photo img {
-    width: 300px;
-    height: 300px;
+    width: 450px;
+    height: 450px;
     position: relative;
     display: inline-block;
     object-fit: cover;
-   
 }
+
+#album li {
+    list-style-type: none; /* Remove bullets */
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  #album {
+      margin: auto;
+      margin-top: 40px;
+      width: 75%;
+  }
+  
+  #album img{
+      width: 450px;
+  }
+  
+  #album figcaption{
+      margin-top: -50px;
+      text-align: center;
+      font-family:'Times New Roman', Times, serif;
+      text-transform: uppercase;
+  }
+  
+  .hiddenText {
+    position: relative; 
+    left: 45px; 
+    bottom: 160px; 
+    background: rgba(255, 255, 255, 0.6); 
+    width: 320px;
+    padding: 20px;
+    transition: 0.5s;
+    opacity:0;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  #album li:hover .hiddenText {
+    opacity: 1;
+  }
+  
+  #album li img:hover {
+    cursor: pointer;
+  }

@@ -39,24 +39,55 @@
 
     <!--Create a Gallery-->
      <ul id="album">
-     <!--   <li id="photo"><img src="images/pet1.jpg"></li>
-        <li id="photo"><img src="images/pet2.jpeg"></li>
-        <li id="photo"><img src="images/pet3.jpeg"></li>
-        <li id="photo"><img src="images/pet4.jpeg"></li>
-        <li id="photo"><img src="images/pet5.jpeg"></li>
-        <li id="photo"><img src="images/pet6.jpeg"></li>
-        <li id="photo"><img src="images/pet7.jpg"></li>
-        <li id="photo"><img src="images/pet8.jpeg"></li>
-        <li id="photo"><img src="images/pet9.jpeg"></li>
-        <li id="photo"><img src="images/pet10.jpeg"></li>
-        <li id="photo"><img src="images/pet11.jpeg"></li>
-        <li id="photo"><img src="images/pet12.jpeg"></li>
-        <li id="photo"><img src="images/pet13.jpeg"></li>
-        <li id="photo"><img src="images/pet14.jpeg"></li> 
-        <li id="photo"><img src="images/pet15.jpeg"></li>  --> 
+     <!--   <li id="photo"><img src="images/pet1.jpg">
+            <caption class = "caption">pet1</caption>
+            </li>
+        <li id="photo"><img src="images/pet2.jpeg">
+          <caption class = "caption">pet2</caption>
+        </li>
+        <li id="photo"><img src="images/pet3.jpeg">
+         <caption class = "caption">pet3</caption>
+        </li>
+        <li id="photo"><img src="images/pet4.jpeg">
+           <caption class = "caption">pet4</caption>
+        </li>
+        <li id="photo"><img src="images/pet5.jpeg">
+           <caption class = "caption">pet5</caption>
+        </li>
+        <li id="photo"><img src="images/pet6.jpeg">
+           <caption class = "caption">pet6</caption>
+        </li>
+        <li id="photo"><img src="images/pet7.jpg">
+           <caption class = "caption">pet7</caption>
+        </li>
+        <li id="photo"><img src="images/pet8.jpeg">
+           <caption class = "caption">pet8</caption>
+        </li>
+        <li id="photo"><img src="images/pet9.jpeg">
+           <caption class = "caption">pet9</caption>
+        </li>
+        <li id="photo"><img src="images/pet10.jpeg">
+           <caption class = "caption">pet10</caption>
+        </li>
+        <li id="photo"><img src="images/pet11.jpeg">
+           <caption class = "caption">pet11</caption>
+        </li>
+        <li id="photo"><img src="images/pet12.jpeg">
+           <caption class = "caption">pet12</caption>
+        </li>
+        <li id="photo"><img src="images/pet13.jpeg">
+           <caption class = "caption">pet13</caption>
+        </li>
+        <li id="photo"><img src="images/pet14.jpeg">
+           <caption class = "caption">pet14</caption>
+        </li> 
+        <li id="photo"><img src="images/pet15.jpeg">
+           <caption class = "caption">pet15</caption>
+        </li>  --> 
     </ul> 
 
     </main>
+
 
     <!--Footer Information-->
     <footer>&copy; Copyright 2022 Local Pet Adoption Service</footer>
@@ -70,16 +101,14 @@
         var openList = "<li id = 'photo'>"; //Declare a variable to contain open list tag
         var closeList = "</li>"; //Declare a variable to contain close list tag
         
-        var captionTexts = ["Pet 1", "Pet 2", "Pet 3","Pet 4","Pet 5","Pet 6","Pet 7","Pet 8","Pet 9","Pet 10","Pet 11","Pet 12","Pet 13","Pet 14","Pet 15"]
-        var descTexts = []
-
 
         //Create a loop to create 15 images starting with index of 0
         for (var i=0; i<15; i++){
+            captionText = "Pet No. " + (i+1);
             fileNames.push("pet"+(i+1)); //Create image file name and store in the array
-            photos.push("<img src='images/"+fileNames[i]+".jpeg'>"); //Assemble file name into image element and store in an arry
-            image = openList + photos[i] + closeList; //Assemble image element from array with list elements and store in a variable
-            imageList.push(image); //Store(push) the assembled list codes into an array           
+            photos.push("<img src='images/"+fileNames[i]+".jpeg'>"); //Assemble file name into image element and store in an array
+            image = openList + photos[i] + "<div class='hiddenText'>Adopt today!</div>" + "<figcaption class='caption'>" + captionText + "</figcapton>" + closeList; //Assemble image element from array with list elements and store in a variable
+            imageList.push(image); //Store(push) the assembled list codes into an array   
         }
         //Display all 15 image codes stored in the array
         document.getElementById("album").innerHTML = imageList;
