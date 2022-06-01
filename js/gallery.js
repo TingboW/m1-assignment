@@ -1,4 +1,3 @@
-
 var photos = []; //Declare an empty array to store image element
 var fileNames = []; //Declare an empty element to store image file names
 var imageList = []; //Declare an empty array to store html list taht contain an image
@@ -30,6 +29,7 @@ for (var i=0; i<15; i++){
     image = openList + photos[i] + "<div class='hiddenText' onclick='on(" + i + ")'>Adopt today!</div>" + "<figcaption class='caption'>" + captionText + "</figcapton>" + closeList; //Assemble image element from array with list elements and store in a variable
     imageList.push(image); //Store(push) the assembled list codes into an array   
 }
+
 //Display all 15 image codes stored in the array
 document.getElementById("album").innerHTML = imageList;
 
